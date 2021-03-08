@@ -14,7 +14,7 @@ function Page(data) {
   var items = data.blogs
   var paginateDisp = data.display
   var page = data.page
-//console.log("display=", data.display)  
+//console.log(items)  
   return (
     <Layout>
       <Head><title key="title">{data.site_name}</title></Head> 
@@ -31,7 +31,7 @@ function Page(data) {
               {items.map((item, index) => {
 //                console.log(item.id ,item.createdAt )
                 return (<IndexRow key={index}
-                  id={item.id} show_id={item.show_id} title={item.title}
+                  id={item.id} save_id={item.save_id} title={item.title}
                   date={item.created_at} />       
                 )
               })}
