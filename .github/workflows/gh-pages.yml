@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-18.04
     env:
       MY_JSON_URL: ${{secrets.MY_JSON_URL}}
-      MY_SITE_NAME: Jamstack-ex3
+      MY_SITE_NAME: Jamstack-ex4
     steps:
     - uses: actions/checkout@v2
 

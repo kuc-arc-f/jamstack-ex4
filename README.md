@@ -37,6 +37,17 @@ yarn deploy
 
 
 ***
+### json file edit URL
+
+https://kuc-arc-f.github.io/react-idx-6edit2/
+
+
+***
+### json file edit code
+
+https://github.com/kuc-arc-f/react_idx_6edit2
+
+***
 ### Blog : 
 
 ***
