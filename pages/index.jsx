@@ -2,11 +2,12 @@ import Head from 'next/head'
 import Link from 'next/link';
 import Layout from '../components/layout'
 
-export default function Index(data) {
+export default function Index(props) {
+//console.log(props.site_name)
   return (
   <div className="body_wrap d-flex text-center text-white bg-secondary">
     <Head>
-      <title>{process.env.MY_SITE_NAME}</title>
+      <title>{props.site_name}</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossOrigin="anonymous" />      
       <link href="/css/cover.css" rel="stylesheet"></link>
@@ -23,9 +24,9 @@ export default function Index(data) {
         </div>
       </header>
       <main className="px-3">
-        <h1>{process.env.MY_SITE_NAME}</h1>
+        <h1>{props.site_name}</h1>
         <p className="lead">
-          {process.env.MY_SITE_INFO}
+          { props.site_info}
         </p>
         <p className="lead">
           <a href="/home" className="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
@@ -70,7 +71,7 @@ export async function getStaticProps() {
     props : {
       blogs: [],
       site_name : process.env.MY_SITE_NAME,
-//      info_text : "CMSの関連記事を公開予定しております。",        
+      site_info : "Next.js + Bootstrap 5 , json file read sample",
     }
   };
 }

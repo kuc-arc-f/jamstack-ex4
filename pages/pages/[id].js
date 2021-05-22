@@ -14,21 +14,23 @@ export default function Page({ blog }) {
   return (
     <Layout>
     <Head><title key="title">{blog.title}</title></Head>      
-    <div className="container">
-      <Link href="/" >
-        <a className="btn btn-outline-primary mt-2">Back</a>
-      </Link>
-      <hr className="mt-2 mb-2" />
+    <div className="container bg-light">
       <div className="show_head_wrap">
-          <i className="fas fa-home"></i> >
+        <i className="bi bi-house-fill mx-2"></i> >
           {blog.title}
       </div>
-      <hr /> 
-      <h1>{blog.title}</h1>
-      Date: {blog.created_at}<br />
-      <hr />
-      <div id="post_item" dangerouslySetInnerHTML={{__html: `${blog.content}`}}></div>
-      <hr />                 
+      <div className="card shadow-sm my-2">
+        <div className="card-body">
+          <h1>{blog.title}</h1>
+          Date: {blog.created_at}<br />
+        </div>
+      </div>
+      <div className="card shadow-sm mt-2 mb-4">
+        <div className="card-body">
+          <div id="post_item" dangerouslySetInnerHTML={{__html: `${blog.content}`}}>
+          </div>
+        </div>
+      </div> 
     </div>
     <style>{`
       div#post_item > p > img{

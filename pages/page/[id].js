@@ -1,5 +1,4 @@
 import React from 'react'
-//import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Head from 'next/head';
 
@@ -18,16 +17,17 @@ function Page(data) {
   return (
     <Layout>
       <Head><title key="title">{data.site_name}</title></Head> 
-      <TopHeadBox site_name={data.site_name} />
       <div className="body_main_wrap">
+        <TopHeadBox site_name={data.site_name} />
         <div className="container">
           <div className="body_wrap">
             <div id="post_items_box" className="row conte mt-2 mb-4">
               <div className="col-sm-12">
-                <div id="div_news">
-                  <h2 className="h4_td_title mt-2 mb-2" >Post</h2>
-                </div>
               </div>
+              <div id="div_news">
+                <h2 className="myblog_color_accent mt-2 mb-2" >Post</h2>
+              </div>
+              <div className="posts_items_row mb-2">
               {items.map((item, index) => {
 //                console.log(item.id ,item.createdAt )
                 return (<IndexRow key={index}
@@ -35,12 +35,17 @@ function Page(data) {
                   date={item.created_at} />       
                 )
               })}
-              <hr /> 
+              </div>
               <PagingBox page={page} paginateDisp={paginateDisp} />            
             </div>
           </div>          
         </div>
       </div>
+      <style>{`
+      .card_col_body{ text-align: left; width: 100%;}
+      .card_col_icon{ font-size: 2.4rem; }
+      .task_card_box{ width : 75%;}
+      `}</style>      
     </Layout>
     )  
 }

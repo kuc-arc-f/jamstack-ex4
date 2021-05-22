@@ -8,11 +8,11 @@ export default function Page(props){
   return (
   <div>
     { paginateDisp ? (
-    <div className="paginate_wrap">
+    <div className="paginate_wrap text-center">
       <div className="btn-group" role="group" aria-label="Basic example">
-        <Link href="/page/1"><a className="btn btn-lg btn-outline-primary">
+        <Link href="/page/1"><a className="btn btn-lg btn-outline-dark">
           1st</a></Link>
-          <Link href={`/page/${nextPage}`}><a className="btn btn-lg btn-outline-primary">
+          <Link href={`/page/${nextPage}`}><a className="btn btn-lg btn-outline-dark">
           > </a></Link>
       </div>
     </div>

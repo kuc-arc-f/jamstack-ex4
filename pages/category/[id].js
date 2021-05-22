@@ -10,7 +10,6 @@ import LibCms from '../../libs/LibCms'
 //
 function Page(data) {
   var items = data.blogs
-//  var paginateDisp = data.display
 //  var page = data.page
   var category_name = data.category_name
 //console.log("display=", data.display)  
@@ -20,14 +19,14 @@ function Page(data) {
       </Head> 
       <div className="body_main_wrap">
         <div className="container">
-          <Link href="/" >
-            <a className="btn btn-outline-primary mt-2">Back</a>
+          <Link href="/home" >
+            <a className="btn btn-outline-dark mt-2">Back</a>
           </Link>          
           <div className="body_wrap">
             <div id="post_items_box" className="row conte mt-2 mb-4">
               <div className="col-sm-12">
                 <div id="div_news">
-                  <h2 className="h4_td_title mt-2 mb-2">Category : {category_name}
+                  <h2 className="myblog_color_accent mt-2 mb-2">Category : {category_name}
                   </h2>
                 </div>
                 <hr />
