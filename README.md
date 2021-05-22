@@ -6,7 +6,11 @@
 
  date    : 2021/03/07
 
- update  : 2021/03/11
+ update  : 2021/05/22
+
+***
+## License
+Licence : MIT License
 
 ***
 ### Summary
@@ -35,6 +39,10 @@ yarn dev
 
 yarn deploy
 
+
+***
+### sample URL
+https://cms-kuc-jamstack-ex4.netlify.app/
 
 ***
 ### json file edit URL
