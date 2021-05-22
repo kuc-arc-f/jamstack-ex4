@@ -11,7 +11,7 @@ export default function Page(props){
           <div className="row">
               <div className="col-sm-6 p-2">
               <Link href="/" >
-                <a><h1>Jamstack-ex4</h1></a>
+                <a><h3>Jamstack-ex4</h3></a>
               </Link>
               </div>
               <div className="col-sm-6 text-center">
