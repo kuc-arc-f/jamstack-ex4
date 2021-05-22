@@ -1,12 +1,12 @@
 # jamstack-ex4
 
- Version: 0.9.1
+ Version: 0.9.2
 
  Author  : Kouji Nakashima / kuc-arc-f.com
 
  date    : 2021/03/07
 
- update  : 2021/05/22
+ update  : 2021/05/22 
 
 ***
 ## License
