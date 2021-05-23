@@ -57,7 +57,7 @@
  color: #004D40; background:var(--bs-white); border: 2px solid #004D40;         
 }
 .btnx-outline-cyan{
- color: #006064; background:var(--bs-white); border: 2px solid #006064;         
+  color: var(--bs-cyan);; background:var(--bs-white); border: 2px solid var(--bs-cyan);;         
 }
 .btnx-outline-lime{
  color: #827717; background:var(--bs-white); border: 2px solid #827717;         
