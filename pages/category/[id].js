@@ -18,7 +18,7 @@ function Page(data) {
       <Head><title key="title">{category_name} | {data.site_name}</title>
       </Head> 
       <div className="body_main_wrap">
-        <div className="container">
+        <div className="container bg-white">
           <Link href="/home" >
             <a className="btn btn-outline-dark mt-2">Back</a>
           </Link>          

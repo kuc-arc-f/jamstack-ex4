@@ -26,8 +26,8 @@ function Page(data) {
       <div className="container">
         <div className="btn_disp_ara_wrap mt-0">
           <div className="pages_wrap card shadow-sm my-2">
+            <h5 className="card-header myblog_color_accent">Pages</h5>
             <div className="card-body">
-              <h2 className="myblog_color_accent mt-2" >Pages</h2>
               <div className="page_btn_wrap mb-0">
                 {page_items.map((item, index) => {
     // console.log(item.show_id ,item.created_at )
@@ -38,8 +38,8 @@ function Page(data) {
             </div>
           </div>
           <div className="category_wrap card shadow-sm my-2">
+            <h5 className="card-header myblog_color_accent">Category</h5>
             <div className="card-body">
-              <h2 className="myblog_color_accent mt-2" >Category</h2>
               <div className="category_btn_wrap mb-0">
               {category_items.map((item, index) => {
 // console.log(item )
@@ -51,11 +51,13 @@ function Page(data) {
             </div>
           </div>
         </div>
-        <div className="body_wrap card shadow-sm my-2">
-          <div id="post_items_box" className="card-body mt-2 mb-4">
+        <div className="body_wrap card shadow-sm my-4">
+          <span className="badge_post badge pt-2 pb-1 rounded myblog_bgcolor_accent px-3">
+            <h5>Posts</h5>
+          </span>          
+          <div id="post_items_box" className="card-body mt-4 mb-4">
             <div id="div_news">
-              <h2 className="myblog_color_accent mt-2 mb-2" >Post</h2>
-            </div>
+            </div>            
             <div className="posts_items_row mb-2">
               {items.map((item, index) => {
   // console.log(item )
@@ -72,6 +74,10 @@ function Page(data) {
       </div>
     </div>
     <style>{`
+    .body_wrap{ position:relative; }
+    .badge_post{
+      position:absolute; top:-15px; left:10px; 
+    }    
     .card_col_body{ text-align: left; width: 100%;}
     .card_col_icon{ font-size: 2.4rem; }
     .task_card_box{ width : 75%;}

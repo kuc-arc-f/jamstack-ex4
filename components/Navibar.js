@@ -5,7 +5,7 @@ export default function Page(props){
 //  console.log(props.site_name)
 //  var site_name = props.site_name
   return (
-  <div id="div_navigate_index">
+  <div id="div_navigate_index" className="myblog_bgcolor_main">
     <div id="div_head" className="cover">
       <div className="container">
           <div className="row">

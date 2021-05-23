@@ -6,6 +6,7 @@
   background :#9E9E9E;
 }
 .myblog_bgcolor_accent{
+  background :var(--bs-orange);
 }
 /* color */
 .myblog_color_accent{
